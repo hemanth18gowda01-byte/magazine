@@ -48,7 +48,7 @@ where,
 #### Example : 
 $2^x \equiv 9 \pmod{11}$ , find 'x'?
 
-Testing for 'x' values :
+###### Testing for 'x' values :
 
 $ 2^1 \equiv 2 \pmod{11} $
 $ 2^2 \equiv 4 \pmod{11} $
