@@ -51,11 +51,17 @@ $2^x \equiv 9 \pmod{11}$ , find 'x'?
 ###### Testing for 'x' values :
 
 $2^1 \equiv 2 \pmod{11}$
+
 $2^2 \equiv 4 \pmod{11}$
+
 $2^3 \equiv 8 \pmod{11}$
+
 $2^4 \equiv 5 \pmod{11}$
+
 $2^5 \equiv 10 \pmod{11}$
+
 $2^6 \equiv 9 \pmod{11}$
+
 
 <p>The solution is x = 6 which satisfies DLP. With small numbers, trial multiplication works quickly, but for large primes, it becomes practically impossible</p>
 
