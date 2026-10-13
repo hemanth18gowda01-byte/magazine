@@ -6,32 +6,22 @@ Exploring the Mathematics, Computational Complexity, and Cryptographic Applicati
 What was the problem ?
 We had Standard Symmetric Encryption Systems but the main problem is to exchange the keys to decrypt the encryption which is encrypted in Symmetric Encrytion Algorithms. Some on can say we had Public Key Encryption but the problem while using Public Key Encryption is :
 
-    1. Computational Overload :- Asymmetric mathematics uses massive numbers and complex modular  arithmetic.
+<p>1. Computational Overload :- Asymmetric mathematics uses massive numbers and complex modular  arithmetic.</p>
+<p>2. File Size and Speed Limits :- Data size is mathematically limited by the key size, making it much slower than bulk symmetric encryption.</p>
+<p>3. Man in the Middle Attacks</p>
+<p>4. Identity Verification Challenges</p>
+<p>5. Private Key Loss or compromise</p>
+<p>6. Quantum Computing Threats</p>
+<p>7. Key Mismanagement and Expiration</p>
 
-    2. File Size and Speed Limits :- Data size is mathematically limited by the key size, making it much slower than bulk symmetric encryption.
+<p>so we need a reliable solution to exchange keys and it must be mathematically infeasible to decode the algorithm. 
+solution for this problem is to implement Discrete Logarithm Problem which is mainly applicable in :</p>
 
-    3. Man in the Middle Attacks 
-
-    4. Identity Verification Challenges
-
-    5. Private Key Loss or compromise
-
-    6. Quantum Computing Threats
-
-    7. Key Mismanagement and Expiration
-
-so we need a reliable solution to exchange keys and it must be mathematically infeasible to decode the algorithm. 
-solution for this problem is to implement Discrete Logarithm Problem which is mainly applicable in :
-
-    1. Diffie Hellman Key Exchange - Helps two parties establish a shared secret over a public channel.
-
-    2. Digital Signature Algorithm(DSA) - provides the mathematical foundation for signature security.
-
-    3. Bitcoin & Ethereum - ECDSA(Elliptic Curve Digital Signature Algorithm) rely on the elliptic curve discrete logarithm problem.
-
-    4. Secure Communication - Discrete logarithm based key agreement can help establish keys for encrypted communication.
-
-    etc.....
+<p>1. Diffie Hellman Key Exchange - Helps two parties establish a shared secret over a public channel.</p>
+<p>2. Digital Signature Algorithm(DSA) - provides the mathematical foundation for signature security.</p>
+<p>3. Bitcoin & Ethereum - ECDSA(Elliptic Curve Digital Signature Algorithm) rely on the elliptic curve discrete logarithm problem.</p>
+<p>4. Secure Communication - Discrete logarithm based key agreement can help establish keys for encrypted communication.</p>
+<p>etc.....</p>
 
 ## Mathematical Representation and Working of DLP
 The Discrete Logarithm Problem (DLP) is a mathematical problem where you must find an unknown exponent x in a modular or group equation of the form:
@@ -93,11 +83,21 @@ $$K = A^b \mod p $$
 
 The values of both K are equal that is the shared key between party 1 and party 2 
 
+###### Example of DHKE :
+
+
 ## Elliptic Curve Digital Signature Algorithm (ECDSA)
 
 ### Overview
 #### What is ECDSA ?
     Elliptic Curve Digital Signature Algorithm is a digital signature algorithm that uses Elliptic Curve Cryptography.
+
+    It helps verify:
+- Who authorized a transaction.
+- Whether a signed message has been modified.
+- Whether a signature corresponds to a particular public key.
+
+Application: Bitcoin and Ethereum use ECDSA for traditional externally owned account signatures.
 
 ### Mathematical
 
