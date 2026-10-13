@@ -46,19 +46,20 @@ where,
 <p>'x' is unknown</p>
 
 #### Example : 
-$$ 2^x \equiv 9 \pmod{11} $$ , find x ?
+$2^x \equiv 9 \pmod{11}$ , find 'x'?
 
 Testing for 'x' values :
-$$ 2^1 \equiv 2 \pmod{11} $$
-$$ 2^2 \equiv 4 \pmod{11} $$
-$$ 2^3 \equiv 8 \pmod{11} $$
-$$ 2^4 \equiv 5 \pmod{11} $$
-$$ 2^5 \equiv 10 \pmod{11} $$
-$$ 2^6 \equiv 9 \pmod{11} $$
 
-The solution is x = 6 which satisfies DLP. With small numbers, trial multiplication works quickly, but for large primes, it becomes practically impossible
+$ 2^1 \equiv 2 \pmod{11} $
+$ 2^2 \equiv 4 \pmod{11} $
+$ 2^3 \equiv 8 \pmod{11} $
+$ 2^4 \equiv 5 \pmod{11} $
+$ 2^5 \equiv 10 \pmod{11} $
+$ 2^6 \equiv 9 \pmod{11} $
 
-Until we know only how to solve the Discrete Logarithm Problem it's basically we need to solve for x in Cyclic Field ($g^x = h$). So Now lets go to the main use cases of DLP , for this magazine we will be looking only DLP applications for Secure Key Exchange Protocol(i.e, DHKE) and Digital Signature (i.e,ECDSA)
+<p>The solution is x = 6 which satisfies DLP. With small numbers, trial multiplication works quickly, but for large primes, it becomes practically impossible</p>
+
+<p>Until we know only how to solve the Discrete Logarithm Problem it's basically we need to solve for x in Cyclic Field ($g^x = h$). So Now lets go to the main use cases of DLP , for this magazine we will be looking only DLP applications for Secure Key Exchange Protocol(i.e, DHKE) and Digital Signature (i.e,ECDSA)</p>
 
 ## Diffie - Hellman Key Exchange (DHKE)
 ### Overview
