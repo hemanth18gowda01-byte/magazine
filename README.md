@@ -40,10 +40,10 @@ $g^x \equiv h \pmod p$
 
 where, 
 
-<p>'g' is generator
-'h' is known number
-'p' is prime number
-'x' is unknown</p>
+<p>'g' is generator</p>
+<p>'h' is known number</p>
+<p>'p' is prime number</p>
+<p>'x' is unknown</p>
 
 #### Example : 
 $$ 2^x \equiv 9 \pmod{11} $$ , find x ?
