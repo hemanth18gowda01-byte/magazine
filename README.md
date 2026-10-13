@@ -30,17 +30,20 @@ solution for this problem is to implement Discrete Logarithm Problem which is ma
     3. Bitcoin & Ethereum - ECDSA(Elliptic Curve Digital Signature Algorithm) rely on the elliptic curve discrete logarithm problem.
 
     4. Secure Communication - Discrete logarithm based key agreement can help establish keys for encrypted communication.
-    
+
     etc.....
 
 ## Mathematical Representation and Working of DLP
 The Discrete Logarithm Problem (DLP) is a mathematical problem where you must find an unknown exponent x in a modular or group equation of the form:
+
 $g^x \equiv h \pmod p$
+
 where, 
-'g' is generator
+
+<p>'g' is generator
 'h' is known number
 'p' is prime number
-'x' is unknown
+'x' is unknown</p>
 
 #### Example : 
 $$ 2^x \equiv 9 \pmod{11} $$ , find x ?
