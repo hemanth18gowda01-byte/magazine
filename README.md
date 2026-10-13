@@ -24,7 +24,7 @@ solution for this problem is to implement Discrete Logarithm Problem which is ma
 <p>etc.....</p>
 
 ## Mathematical Representation and Working of DLP
-The Discrete Logarithm Problem (DLP) is a mathematical problem where you must find an unknown exponent x in a modular or group equation of the form:
+<p>The Discrete Logarithm Problem (DLP) is a mathematical problem where you must find an unknown exponent x in a modular or group equation of the form:</p>
 
 $g^x \equiv h \pmod p$
 
@@ -60,7 +60,7 @@ $2^6 \equiv 9 \pmod{11}$
 ## Diffie - Hellman Key Exchange (DHKE)
 ### Overview
 #### What is Diffie Hellman Key Exchange?
-    Diffie Hellman Key Exchange is a technique that allows two perties to establish a shared secret over a public channel without directly transmitting the secret itself.
+<p>Diffie Hellman Key Exchange is a technique that allows two perties to establish a shared secret over a public channel without directly transmitting the secret itself.</p>
 
 
 ### Mathematical
@@ -90,7 +90,7 @@ The values of both K are equal that is the shared key between party 1 and party 
 
 ### Overview
 #### What is ECDSA ?
-    Elliptic Curve Digital Signature Algorithm is a digital signature algorithm that uses Elliptic Curve Cryptography.
+<p>Elliptic Curve Digital Signature Algorithm is a digital signature algorithm that uses Elliptic Curve Cryptography.</p>
 
     It helps verify:
 - Who authorized a transaction.
@@ -105,14 +105,39 @@ The discrete logarithm problem is defined as $g^x \equiv y \pmod p$.
 
 ## Why Discrete Logarithm Problem is hard to revert 
 ### Overview
-### Mathematical
+<h3>Reverting the Discrete Logarithm Problem is Computationally infeasible</h3>
 
+### Reasons :
+1. Modular arithmetic hides information about the exponent
+2. There is no known efficient classical algorithm for the general cryptographic problem
+3. The exponent is a secret, but the public value is a group element
+4. Cryptographic parameters are chosen to make attacks infeasible
+
+### Mathematically why DLP is infeasible
+$$Y = g^a \mod p $$
+<p>Basically we have to find the unknown that is 'a'</p>
+<p>take the logarithm with base 'g' then the above equation looks like</p>
+
+$x = \log_g y$
+
+<p>But modular exponentiation behaves differently because values wrap around modulo p .
+Ordinary real-number logarithms don't reverse modular exponentiation.</p>
+<p>Here we used small fields so it's easy to calculate the logarithm of it but in Cryptographic world we will use large finite fields which makes infeasible to calculate it and the modulas operator wraps the numbers so it is very hard to find the value 'a'.</p>
 
 
 ## Attacking Research
-### Overview 
-### code
+### Overview protocols
 
+<p>Main Attacks used to break DLP based protocols</p>
+
+1. Brute Force Search Attack 
+2. Baby-step Giant-step (BSGS)
+3. Pollard's rho algorithm
+4. Pohlig–Hellman algorithm
+5. Index calculus and Number Field Sieve
+
+
+### code
 
 
 ## Conlusion 
