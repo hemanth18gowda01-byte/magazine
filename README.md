@@ -31,7 +31,7 @@ where,
 'p' is prime number
 'x' is unknown
 
-Example : 
+#### Example : 
 $$ 2^x \equiv 9 \pmod{11} $$ , find x ?
 
 Testing for 'x' values :
@@ -44,7 +44,7 @@ $$ 2^6 \equiv 9 \pmod{11} $$
 
 The solution is x = 6 which satisfies DLP. With small numbers, trial multiplication works quickly, but for large primes, it becomes practically impossible
 
-Until we know only how to solve the Discrete Logarithm Problem it's basically we need to solve for x in Cyclic Field ($g^x \equal h$). So Now lets go to the main use cases of DLP , for this magazine we will be looking only DLP applications for Secure Key Exchange Protocol(i.e, DHKE) and Digital Signature (i.e,ECDSA)
+Until we know only how to solve the Discrete Logarithm Problem it's basically we need to solve for x in Cyclic Field ($g^x = h$). So Now lets go to the main use cases of DLP , for this magazine we will be looking only DLP applications for Secure Key Exchange Protocol(i.e, DHKE) and Digital Signature (i.e,ECDSA)
 
 ## Diffie - Hellman Key Exchange (DHKE)
 ### Overview
